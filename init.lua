@@ -1,4 +1,4 @@
-local colorscheme = "catppuccin"
+local colorscheme = "duskfox"
 
 vim.loader.enable()
 vim.g.loaded_python3_provider = 0

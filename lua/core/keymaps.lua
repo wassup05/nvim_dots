@@ -26,8 +26,8 @@ keymap("n", "<leader>la", ":Lazy load all<CR>", { desc = "Load all the plugins" 
 -- Themes
 keymap("n", "<leader>th", function()
 	vim.cmd("TransparentDisable")
-	vim.cmd("Telescope colorscheme")
 	vim.cmd("Lazy load all")
+	vim.cmd("Telescope colorscheme")
 end, { desc = "Telescope theme switcher" })
 
 -- Normal
@@ -69,7 +69,7 @@ keymap("n", "<leader>tn", ":tabn<CR>", { desc = "Next Tab" })
 -- Navigate buffers
 keymap("n", "<Tab>", ":bnext<CR>", { desc = "Next Buffer" })
 keymap("n", "<S-Tab>", ":bprev<CR>", { desc = "Previous Buffer" })
-keymap("n", "<leader>bd", ":bdelete<CR>", { desc = "Delete Buffer" })
+keymap("n", "<leader>bd", ":bdelete!<CR>", { desc = "Delete Buffer" })
 
 -- Indent the whole file
 keymap("n", "<leader>i", "GVgg=0", { desc = "Indent the whole file" })

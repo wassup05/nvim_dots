@@ -1,16 +1,23 @@
 return {
 	"wassup05/fortran.nvim",
 	name = "fortran",
-	dev = true,
+	dev = false,
 	lazy = true,
-	ft = "fortran",
+	ft = {"fortran"},
 	opts = {
 		server_opts = {
 			path = "fortls",
 		},
 
+    fpm_opts = {
+      args = {
+        "--compiler",
+        "gfortran",
+      },
+    },
+
 		formatter_opts = {
-			formatter_args = {
+			args = {
 				"--indent",
 				"4",
 				"--case",
