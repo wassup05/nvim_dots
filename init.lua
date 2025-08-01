@@ -35,7 +35,7 @@ require("lazy").setup({
 		title = "Lazy",
 	},
 	dev = {
-		path = "~/programming/projects/neovim",
+		path = "~/Programming/projects/neovim",
 		fallback = false,
 	},
 	rocks = {

@@ -72,7 +72,7 @@ keymap("n", "<S-Tab>", ":bprev<CR>", { desc = "Previous Buffer" })
 keymap("n", "<leader>bd", ":bdelete!<CR>", { desc = "Delete Buffer" })
 
 -- Indent the whole file
-keymap("n", "<leader>i", "GVgg=0", { desc = "Indent the whole file" })
+keymap("n", "<leader>i", "GVgg=", { desc = "Indent the whole file" })
 
 -- For jumping half page up or down in a neat way
 keymap("n", "<C-d>", "<C-d>zz", { desc = "Jump Half a page down centered" })

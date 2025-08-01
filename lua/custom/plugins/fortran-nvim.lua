@@ -1,14 +1,10 @@
 return {
 	"wassup05/fortran.nvim",
 	name = "fortran",
-	dev = false,
+	dev = true,
 	lazy = true,
 	ft = {"fortran"},
 	opts = {
-		server_opts = {
-			path = "fortls",
-		},
-
     fpm_opts = {
       args = {
         "--compiler",
@@ -26,6 +22,7 @@ return {
 				"1",
 				"1",
 			},
+      format_on_save = false,
 		},
 	},
 }
